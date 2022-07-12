@@ -4,84 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Denis Novik Portfolio</title>
 </head>
 <body>
     <header id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <ul class="flex__center ul__nav">
+                    <li class="header_li"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="header_li"><a href="#about-me" class="nav__link">About me</a></li>
+                    <li class="header_li"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="header_li"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="header_li"><a href="#contacts" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
     <main>
-        <section>
+        <section class="container hero">
             <h1>Denis Novik</h1>
-            <img src="./img/hero.jpg" alt="Denis-Novik-photo">
+            <img src="./img/hero.jpg" alt="Denis-Novik-photo" class="full__width">
         </section>
-        <section id="about-me">
-            <h3>About me</h3>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects with wonderful people.</p>
+        <section id="about-me" class="grey__bg section__about_me full__width">
+            <h3 class="h3__about__me">About me</h3>
+                <p>
+                    Hi, I'm Denis – UX/UI designer from Minsk. <br>
+                    I'm interested in design and everything connected with it.
+                </p>
+                <p class="p__about_me">
+                    I'm studying at courses "Web and mobile design <br>
+                    interfaces" in IT-Academy.
+                </p>
+                <p class="p__about_me">
+                    Ready to implement excellent projects <br>
+                    with wonderful people.
+                </p>
         </section>
         <section id="skills">
             <h3>Skills</h3>
-            <p>I work in such programs as</p>
-            <div>
-                <div>
+            <p class="p__skils">I work in such programs as</p>
+            <div class="flex__center skills__container container">
+                <div class="specific__skill">
                     <img src="./img/ps-icon.svg" alt="photoshop-icon">
-                    <h5>Adobe Photoshop
-                    </h5>
-                    <span></span><span></span><span></span><span></span><span></span>
+                    <h5>Adobe Photoshop</h5>
+                    <div class="rating__container">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                    </div>
+                    
                 </div>
-                <div>
-                    <img src="./img/ai-icon.svg" alt="">
-                    <h5>Adobe Illustrator
-                    </h5>
-                    <span></span><span></span><span></span><span></span><span></span>
+                <div class="specific__skill">
+                    <img src="./img/ai-icon.svg" alt="Illustrator-icon">
+                    <h5>Adobe Illustrator</h5>
+                    <div class="rating__container">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/ae-icon.svg" alt="">
-                    <h5>Adobe After Effects
+                <div class="specific__skill">
+                    <img src="./img/ae-icon.svg" alt="ae-icon">
+                    <h5 class="h5__ae">Adobe <br> After Effects
                     </h5>
-                    <span></span><span></span><span></span><span></span><span></span>
+                    <div class="rating__container">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                        <img src="./img/empty-star.svg" alt="empty-star">
+                    </div>
                 </div>
-                <div>
+                <div class="specific__skill">
                     <img src="./img/figm-icon.svg" alt="figma-icon">
                     <h5>Figma</h5>
-                    <span></span><span></span><span></span><span></span><span></span>
+                    <div class="rating__container rating__container--padding">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                        <img src="./img/filled-star.svg" alt="filled-star">
+                    </div>
                 </div>
             </div>
         </section> 
-        <section id="portfolio">
-            <h3>Portfolio</h3>
-            <div>
-                <img src="./img/online-fashion-store.jpg" alt="online-fashion-store-homepage">
-                <p><a href="#">Online fashion store - <br> Homepage</a></p>   
+        <section id="portfolio" class="grey__bg">
+            <h3 class="h3__portfolio">Portfolio</h3>
+            <div class="portfolio__item container">
+                <img src="./img/online-fashion-store.jpg" alt="online-fashion-store-homepage" class="full__width">
+                <p><a href="#" class="portfolio__link">Online fashion store - <br> Homepage</a></p>   
             </div>
-            <div>
-                <img src="./img/reebok-web.jpg" alt="reebok-website-homepage">
-                <p><a href="#">Reebok Store - Concept</a></p>
+            <div class="portfolio__item container">
+                <img src="./img/reebok-web.jpg" alt="reebok-website-homepage" class="full__width">
+                <p><a href="#" class="portfolio__link">Reebok Store - Concept</a></p>
             </div>
-            <div>
-                <img src="./img/braun-web.jpg" alt="braun-website-homepage">
-                <p><a href="#">Braun Landing Page - Concept</a></p>
+            <div class="portfolio__item container">
+                <img src="./img/braun-web.jpg" alt="braun-website-homepage" class="full__width">
+                <p><a href="#" class="portfolio__link">Braun Landing Page - Concept</a></p>
             </div>
         </section>
     </main>
-    <footer id="contacts">
+    <footer id="contacts" class="footer__container">
         <h3>Contacts</h3>
-        <p>Want to know more or just chat? You are welcome!</p>
+        <p class="btn__description">Want to know more or just chat? You are welcome!</p>
         <div>
-            <button>Send message</button>
+            <button class="btn">Send message</button>
         </div>
         <nav>
-            <ul>
+            <ul class="flex__center ul__footer">
                 <li>
                     <a href="#"><img src="./img/linkedin-con.svg" alt="linkedin-icon"></a>
                 </li>
@@ -96,7 +136,7 @@
                 </li>
             </ul>
         </nav>
-        <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+        <p class="footer__nav_description"><span class="footer__nav_description--line_break">Like me on</span> LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
 </body>
 </html>
